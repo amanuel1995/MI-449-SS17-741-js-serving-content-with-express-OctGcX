@@ -4,6 +4,7 @@
   <head>
     <!-- include the head from partials -->
     <% include ../partials/head %>
+    <title>Prison Break Fansite</title>
   </head>
 
   <body>
@@ -14,8 +15,22 @@
 
     <!-- main container  -->
     <div class="container">
-      <h1 class="display-1">Current News - Prison Break</h1>
+      <h1 class="display-1">Current News</h1>
     </div>
+    <img src="https://www.flickeringmyth.com/wp-content/uploads/2017/01/C158flZVQAAzP8y.jpg" class="thumbnail" alt="" height="40%">
+    <div class="">
+      <!-- display articles -->
+      <% Object.keys(articles).forEach(function (id) { %>
+        <article>
+          <h2><%= articles[id].title %></h2>
+          <p><%= articles[id].content %></p>
+        </article>
+      <% }) %>
+      <a href="http://www.fox.com/prisonbreak">Read full story</a>
 
+      <!-- footer -->
+      <% include ../partials/footer %>
+
+    </div>
   </body>
   </html>
