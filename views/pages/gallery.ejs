@@ -3,25 +3,68 @@
   <head>
     <!-- include the head from partials -->
     <% include ../partials/head %>
-    <title>Gallery</title>
   </head>
-  <body>
+<!-- include the header from the partials -->
+  <header>
+    <% include ../partials/header %>
+  </header>
 
-    <!-- include the header from the partials -->
-    <header>
-      <% include ../partials/header %>
-    </header>
+<body>
 
-    <!-- main container  -->
-    <div class="container">
-      <h1 class="display-1">Welcome to the official fansite</h1>
-      <img class="thumbnail" src="/img/prison-break.jpg" alt="Banner image" height="70%" width="70%">
+    <!-- #region Jssor Slider Begin -->
 
+    <div id="jssor_1" >
+        <!-- Loading Screen -->
+        <div data-u="loading" id="loading">
+            <div id="div"></div>
+            <div id="div2"></div>
+        </div>
+        <div data-u="slides" id="slides">
+            <div>
+                <img data-u="image" src="http://bit.ly/2p65Ogi" />
+            </div>
+
+            <div>
+                <img data-u="image" src="http://bit.ly/2nPSP20" />
+            </div>
+
+            <div>
+              <img data-u="image" src="http://bit.ly/2pkoEjx" />
+            </div>
+
+            <div>
+              <img data-u="image" src="http://bit.ly/2oCK9ef" />
+            </div>
+
+            <div>
+              <img data-u="image" src="http://bit.ly/2oeTpm6" />
+            </div>
+
+            <div>
+              <img data-u="image" src="http://bit.ly/2oCAXql" />
+            </div>
+
+            <div>
+              <img data-u="image" src="http://bit.ly/2p65Ogi" />
+            </div>
+        </div>
+        <!-- Bullet Navigator -->
+        <div data-u="navigator" class="jssorb05" style="bottom:16px;right:16px;" data-autocenter="1">
+            <!-- bullet navigator item prototype -->
+            <div data-u="prototype" style="width:16px;height:16px;"></div>
+        </div>
+        <!-- Arrow Navigator -->
+        <span data-u="arrowleft" class="jssora22l" style="top:0px;left:8px;width:40px;height:58px;" data-autocenter="2"></span>
+        <span data-u="arrowright" class="jssora22r" style="top:0px;right:8px;width:40px;height:58px;" data-autocenter="2"></span>
+    </div>
+    <!-- #endregion Jssor Slider End -->
     <!-- include the footer from the partials -->
     <footer> <% include ../partials/footer %> </footer>
-    </div>
-    <script
+    <script type="text/javascript"
     src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jssor-slider/23.1.0/jssor.slider.min.js"></script>
+    <script type="text/javascript" src="/script/script.js">
+
+    </script>
 </body>
 </html>
