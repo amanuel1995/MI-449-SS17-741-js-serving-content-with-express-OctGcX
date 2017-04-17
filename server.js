@@ -16,21 +16,18 @@ app.use(express.static('public'))
 // function to serve the homepage route
 app.get('/', function (request, response) {
   response.render('pages/index', {
-    articles: articles
   })
 })
 
 // serve the about page route
 app.get('/about', function (request, response) {
   response.render('pages/about', {
-    articles: articles
   })
 })
 
 // serve the photos page route
 app.get('/gallery', function (request, response) {
   response.render('pages/gallery', {
-    articles: articles
   })
 })
 
