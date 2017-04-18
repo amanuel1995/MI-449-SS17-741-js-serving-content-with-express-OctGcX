@@ -15,15 +15,12 @@
 
     <!-- main container  -->
     <div class="container">
-      <h1 class="display-1">Current News</h1>
-    </div>
-    <div>
-      <!-- display articles -->
+      <h1 class="display-1">Current News</h1>      <!-- display articles -->
       <% Object.keys(articles).forEach(function (id) { %>
         <article>
           <h2><%= articles[id].title %></h2>
           <p><%= articles[id].content %></p>
-          <img class="thumbnail" src="<%= articles[id].image %>">
+          <img class="thumbnail" src="<%= articles[id].image %>" width="100%">
           <a href=<%= articles[id].link %>>Read more here! </a>
         </article>
       <% }) %>
